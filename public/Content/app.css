@@ -16,7 +16,7 @@ body {
 
 }
 
-img{
+img {
     float: left;
     margin-right: 3em;
     margin-left: 10em;
@@ -34,6 +34,11 @@ h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+
+h3 {
+    text-align: center;
+}
+
 th,td {
     font-size: 16pt;
 }

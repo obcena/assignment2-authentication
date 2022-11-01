@@ -29,7 +29,7 @@ module.exports.addprocesspage = (req, res, next) => {
   let newList = List({
     Name: req.body.Name,
     ContactNumber: req.body.ContactNumber,
-    Emailaddress: req.body.Emailaddress,
+    Email: req.body.Email,
 
   });
   List.create(newList, (err, contactlist) => {
@@ -64,7 +64,7 @@ module.exports.processingeditpage = (req, res, next) => {
     _id: id,
     Name: req.body.Name,
     ContactNumber: req.body.ContactNumber,
-    Emailaddress: req.body.Email,
+    Email: req.body.Email,
   });
   List.updateOne({ _id: id }, updatebook, (err) => {
     if (err) {

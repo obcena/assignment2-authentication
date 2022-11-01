@@ -1,40 +1,29 @@
 <%- include partials/header.ejs %> <%- include partials/main_nav.ejs %>
 
 <br>
-  <h3>Welcome to the <%= title %></h3>
+  <h3>Welcome to my <%= title %></h3>
 <br><br>
-    <div class="row text-center">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <img class="img-responsive  img-thumbnail" src="images/lottery.jpg" style="width:400px;height:228px;" />
-        <br /><br />
-        <h5>CREATED LOTTERY ROLL PROGRAM IN JAVA</h5>
-        
-      </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <img class="img-responsive img-fluid img-thumbnail" src="images/bug.jpg" style="width:400px;height:228px;" />
-        <br /><br />
-       <h5>CREATED BUG SMASHER GAME IN WEB DEVELOPMENT</h5>
-        
-      </div>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="welcome.gif" class="d-block w-100" alt="image1">
     </div>
-    <br /> <br />
-    <div class="row text-center">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <img class="img-responsive img-fluid img-thumbnail" src="images/prime.jpg" style="width:400px;height:228px;" />
-        <br /><br />
-       
-        <h5>CREATED A PRIME MINISTER PROFILE IN C#</h5>
-        <br /><br /><br />
-      </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <img class="img-responsive img-fluid img-thumbnail" src="images/hand.jpg" style="width:400px;height:228px;" />
-        <br /><br />
-         <h5>CREATED A SHIPPING AND BILLING ADDRESS USING HTML AND JAVASCRIPT</h5>
-        
-      </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
-  
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <%- include partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>
